@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9QZfJ2v6UQg=",
+  "dgSpecHash": "6Kvyg50gQC8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\tests\\BancoDigital.ContaCorrente.Tests\\BancoDigital.ContaCorrente.Tests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\fluentassertions\\8.8.0\\fluentassertions.8.8.0.nupkg.sha512",
+    "C:\\Users\\Jonatas Silva\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\Jonatas Silva\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\Jonatas Silva\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\9.0.10\\microsoft.aspnetcore.mvc.testing.9.0.10.nupkg.sha512",
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\microsoft.aspnetcore.testhost\\9.0.10\\microsoft.aspnetcore.testhost.9.0.10.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj": {}
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj": {
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj",
+        "projectUniqueName": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj",
         "projectName": "BancoDigital.Compartilhado",
-        "projectPath": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj",
+        "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj",
         "packagesPath": "C:\\Users\\Jonatas Silva\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\obj\\",
+        "outputPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jonatas Silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj": {
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
+        "projectUniqueName": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
         "projectName": "BancoDigital.ContaCorrente.API",
-        "projectPath": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
+        "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
         "packagesPath": "C:\\Users\\Jonatas Silva\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\obj\\",
+        "outputPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jonatas Silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -85,8 +85,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj": {
-                "projectPath": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj"
+              "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj": {
+                "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj"
               }
             }
           }
@@ -110,6 +110,14 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.66, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
