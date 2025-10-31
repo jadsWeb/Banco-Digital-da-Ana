@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\tests\\BancoDigital.ContaCorrente.Tests\\BancoDigital.ContaCorrente.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj",
+        "projectName": "BancoDigital.Compartilhado",
+        "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj",
+        "packagesPath": "C:\\Users\\Jonatas Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jonatas Silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
+        "projectName": "BancoDigital.ContaCorrente.API",
+        "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
+        "packagesPath": "C:\\Users\\Jonatas Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jonatas Silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj": {
+                "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.Compartilhado\\BancoDigital.Compartilhado.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\tests\\BancoDigital.ContaCorrente.Tests\\BancoDigital.ContaCorrente.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\tests\\BancoDigital.ContaCorrente.Tests\\BancoDigital.ContaCorrente.Tests.csproj",
+        "projectName": "BancoDigital.ContaCorrente.Tests",
+        "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\tests\\BancoDigital.ContaCorrente.Tests\\BancoDigital.ContaCorrente.Tests.csproj",
+        "packagesPath": "C:\\Users\\Jonatas Silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\tests\\BancoDigital.ContaCorrente.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jonatas Silva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj": {
+                "projectPath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.8.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "cV9HIqgRk+PsFDcIkBUST92m7O/wp1qC4rZRwwpJRAk=",
+  "Source": "BancoDigital.Transferencia.API",
+  "BasePath": "_content/BancoDigital.Transferencia.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

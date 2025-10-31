@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BancoDigital.ContaCorrente.API.props" />
+</Project>

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "4s1N8p35ZZp1nDjDoTwoeTsTDrxrUtejjKKBDkSFDC8=",
+  "Source": "BancoDigital.ContaCorrente.API",
+  "BasePath": "_content/BancoDigital.ContaCorrente.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

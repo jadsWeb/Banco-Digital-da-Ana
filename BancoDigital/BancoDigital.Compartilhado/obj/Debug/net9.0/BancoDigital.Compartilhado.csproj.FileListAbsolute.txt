@@ -1,0 +1,11 @@
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\bin\Debug\net9.0\BancoDigital.Compartilhado.deps.json
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\bin\Debug\net9.0\BancoDigital.Compartilhado.dll
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\bin\Debug\net9.0\BancoDigital.Compartilhado.pdb
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.AssemblyInfoInputs.cache
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.AssemblyInfo.cs
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.csproj.CoreCompileInputs.cache
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.dll
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\refint\BancoDigital.Compartilhado.dll
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.pdb
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\ref\BancoDigital.Compartilhado.dll
