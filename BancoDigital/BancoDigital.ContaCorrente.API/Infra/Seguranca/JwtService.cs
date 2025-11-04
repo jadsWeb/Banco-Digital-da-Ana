@@ -9,7 +9,7 @@ namespace BancoDigital.ContaCorrente.API.Infra.Repositorys
 {
     public class JwtService() : IJwtService
     {
-        public string GerarToken(string idContaCorrente, string NumeroConta, JwtConfiguracoes _jwtConfiguracoes)
+        public string GerarToken(string idContaCorrente, string nome, JwtConfiguracoes _jwtConfiguracoes)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtConfiguracoes.Secret));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -17,7 +17,8 @@ namespace BancoDigital.ContaCorrente.API.Infra.Repositorys
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, idContaCorrente),
-                new Claim("numeroConta", NumeroConta)
+                new Claim("Nome", nome),
+                new Claim("IdConta", idContaCorrente)
             };
 
             var token = new JwtSecurityToken(

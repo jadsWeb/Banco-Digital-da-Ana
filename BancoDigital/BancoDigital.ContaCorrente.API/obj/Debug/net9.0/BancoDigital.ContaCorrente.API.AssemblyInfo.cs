@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BancoDigital.ContaCorrente.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f99904452c37863d971ef82fedf92fd503c13e3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df78b7ab03f5b16e31ed24a0528f283e0739263c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BancoDigital.ContaCorrente.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BancoDigital.ContaCorrente.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,6 +27,32 @@ builder.Services.AddAuthentication(options =>
         ValidAudience = jwtSettings.Audience,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Secret))
     };
+
+    // 🔹 Personaliza o comportamento em erros de token
+    options.Events = new JwtBearerEvents
+    {
+        OnAuthenticationFailed = context =>
+        {
+            context.NoResult(); // evita resposta padrão
+            context.Response.StatusCode = StatusCodes.Status403Forbidden;
+            context.Response.ContentType = "application/json";
+
+            var message = context.Exception switch
+            {
+                SecurityTokenExpiredException => "Token expirado.",
+                SecurityTokenInvalidSignatureException => "Assinatura do token inválida.",
+                _ => "Token inválido ou malformado."
+            };
+
+            var response = new
+            {
+                error = "USER_FORBIDDEN",
+                message
+            };
+
+            return context.Response.WriteAsJsonAsync(response);
+        }
+    };
 });
 
 builder.Services.AddApplicationServicesInfra(builder.Configuration);

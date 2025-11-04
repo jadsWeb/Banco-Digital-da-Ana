@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rmTu89pMpAU=",
+  "dgSpecHash": "DsZiDxUhZD8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
+  "projectFilePath": "c:\\Users\\Jonatas Silva\\Documents\\sistemas\\Banco Digital da Ana\\BancoDigital\\BancoDigital.ContaCorrente.API\\BancoDigital.ContaCorrente.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\Jonatas Silva\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",

@@ -6,7 +6,9 @@ namespace BancoDigital.ContaCorrente.API.Domain.Interfaces
     {
         Task<bool> VerificarContaExistenteAsync(string nome);
         Task CriarContaCorrenteAsync(ContaCorrenteModel criacaoContaCorrente);
-        Task<ContaCorrenteModel> EfetuarLoginAsync(string senha);
+        Task<ContaCorrenteModel> ObterContaAsync(string identificacao);
+        Task<ContaCorrenteModel> ObterContaPorIdAsync(string contaId);
+        Task<int> InativarContaAsync(string contaId);
 
     }
 }
