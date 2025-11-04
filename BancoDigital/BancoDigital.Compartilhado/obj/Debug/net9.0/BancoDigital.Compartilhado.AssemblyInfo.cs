@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BancoDigital.Compartilhado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65991e9b537d4965fa0ffecea8c9b512ed9280e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f97b2abc9a735b30474f180c1641d6e2bb0c7c0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BancoDigital.Compartilhado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BancoDigital.Compartilhado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

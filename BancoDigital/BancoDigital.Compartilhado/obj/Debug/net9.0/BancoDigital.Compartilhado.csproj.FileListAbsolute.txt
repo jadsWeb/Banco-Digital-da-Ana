@@ -9,3 +9,4 @@ c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\Banc
 c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\refint\BancoDigital.Compartilhado.dll
 c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.pdb
 c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\ref\BancoDigital.Compartilhado.dll
+c:\Users\Jonatas Silva\Documents\sistemas\Banco Digital da Ana\BancoDigital\BancoDigital.Compartilhado\obj\Debug\net9.0\BancoDigital.Compartilhado.sourcelink.json
