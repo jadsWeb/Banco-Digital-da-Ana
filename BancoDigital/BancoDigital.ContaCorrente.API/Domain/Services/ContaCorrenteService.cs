@@ -61,5 +61,33 @@ namespace BancoDigital.ContaCorrente.API.Domain.Services
             return "SUCESSO.";  
         }
 
+        public async Task<string> MovimentarContaAsync(string identificacao, MovimentacaoConta movimentacaoConta)
+        {
+            var conta = await _contaCorrenteRepository.ObterContaAsync(identificacao);
+            if (conta == null)
+                conta = await _contaCorrenteRepository.ObterContaPorIdAsync(identificacao);
+            if (movimentacaoConta.NumeroConta == "" && movimentacaoConta.NumeroConta != conta.Numero.ToString() && movimentacaoConta.TipoMovimentacao == "D")
+                throw new Exception("INVALID_TYPE.");
+            Movimento movimento = new()
+            {
+                DataMovimento = DateTime.Now,
+                IdContaCorrente = conta.IdContaCorrente!,
+                TipoMovimento = movimentacaoConta.TipoMovimentacao!,
+                Valor = movimentacaoConta.Valor,
+            };
+            await _contaCorrenteRepository.AdicionarMovimentacaoAsync(movimento);
+            return "SUCESSO.";            
+        }
+
+        public async Task<bool> VerificarContaAtivaAsync(string identificacao)
+        {
+            var conta = await _contaCorrenteRepository.ObterContaAsync(identificacao);
+            if (conta != null)
+                return conta.Ativo;
+            conta = await _contaCorrenteRepository.ObterContaPorIdAsync(identificacao);
+            if (conta != null)
+                return conta.Ativo;
+            return false;
+        }
     }
 }

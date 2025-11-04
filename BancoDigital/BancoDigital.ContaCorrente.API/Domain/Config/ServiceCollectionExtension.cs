@@ -11,7 +11,6 @@ namespace BancoDigital.ContaCorrente.API.Domain.Config
         {
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-            services.AddScoped<IIdentificacaoService, IdentificacaoService>();
             services.AddScoped<IContaCorrenteService, ContaCorrenteService>();
             return services;
         }

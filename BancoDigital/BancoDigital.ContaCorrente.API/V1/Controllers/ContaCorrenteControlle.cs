@@ -1,7 +1,5 @@
-using System.Threading.Tasks;
 using BancoDigital.ContaCorrente.API.Aplicacao.Dtos;
 using BancoDigital.ContaCorrente.API.Domain.Interfaces;
-using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,9 +7,8 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ContaCorrenteController(IMediator mediator, IContaCorrenteService contaCorrenteService) : ControllerBase
+    public class ContaCorrenteController(IContaCorrenteService contaCorrenteService) : ControllerBase
     {
-        private readonly IMediator _mediator = mediator;
         private readonly IContaCorrenteService _contaCorrenteService = contaCorrenteService;
 
         [HttpPost("cadastrar")]
@@ -43,7 +40,7 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
         }
 
         [Authorize]
-        [HttpPut("InativarConta")]
+        [HttpPut("inativarConta")]
         public async Task<IActionResult> InativarConta(string SenhaConta)
         {
             var contaId = User.Claims.FirstOrDefault(c => c.Type == "IdConta")?.Value;
@@ -51,6 +48,26 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
             if ((result = await _contaCorrenteService.InativarContaAsync(contaId!, SenhaConta)) == "SUCESSO")
                 return NoContent();
             return BadRequest(result);
+        }
+
+        [Authorize]
+        [HttpPost("movimentacoes")]
+        public async Task<IActionResult> MovimentarConta(MovimentacaoConta movimentacaoConta)
+        {
+            var identificacao = movimentacaoConta.NumeroConta;
+            if (string.IsNullOrEmpty(identificacao))
+                identificacao = User.Claims.FirstOrDefault(c => c.Type == "IdConta")?.Value;
+            if (movimentacaoConta.Valor <= 0)
+                return BadRequest(": INVALID_VALUE.");
+            if (movimentacaoConta.TipoMovimentacao != "C" && movimentacaoConta.TipoMovimentacao != "D")
+                return BadRequest(":INVALID_TYPE.");
+            var result = await _contaCorrenteService.VerificarContaAtivaAsync(identificacao!);
+            if (!result)
+                return BadRequest(": INACTIVE_ACCOUNT.");
+            var resultMovimentacao = await _contaCorrenteService.MovimentarContaAsync(identificacao!, movimentacaoConta);    
+            if(resultMovimentacao != "SUCESSO.")
+                return BadRequest(resultMovimentacao);
+            return NoContent();
         }
     }
 }

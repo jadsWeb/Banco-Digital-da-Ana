@@ -95,5 +95,28 @@ namespace BancoDigital.ContaCorrente.API.Infra.Repositorys
                 return false;
             }
         }
+
+        public async Task AdicionarMovimentacaoAsync(Movimento movimento)
+        {
+            var sql = @"INSERT INTO Movimento (IdMovimento, IdContaCorrente, TipoMovimento, Valor, DataMovimento) 
+            VALUES (@IdMovimento, @IdContaCorrente, @TipoMovimento, @Valor, @DataMovimento)";
+            try
+            {
+                await _connection.ExecuteAsync(sql, new
+                {
+                    movimento.IdMovimento,
+                    movimento.IdContaCorrente,
+                    movimento.TipoMovimento,
+                    movimento.Valor,
+                    movimento.DataMovimento
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao adicionar movimentação: {ex.Message}");
+                return;
+            }
+        }
+
     }
 }
