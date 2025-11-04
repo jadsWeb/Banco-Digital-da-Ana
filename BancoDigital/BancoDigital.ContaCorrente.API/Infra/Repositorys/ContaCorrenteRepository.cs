@@ -5,7 +5,7 @@ using Dapper;
 
 namespace BancoDigital.ContaCorrente.API.Infra.Repositorys
 {
-    public class ContaCorrenteRepository(IDbConnection connection)
+    public class ContaCorrenteRepository(IDbConnection connection) : IContaCorrenteRepository
     {
         private readonly IDbConnection _connection = connection;
         

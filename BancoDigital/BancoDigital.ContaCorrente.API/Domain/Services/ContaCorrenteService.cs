@@ -2,13 +2,16 @@ using BancoDigital.ContaCorrente.API.Aplicacao.Dtos;
 using BancoDigital.ContaCorrente.API.Aplicacao.Models;
 using BancoDigital.ContaCorrente.API.Domain.Interfaces;
 using BancoDigital.ContaCorrente.API.Infra.Config;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
+using BancoDigital.ContaCorrente.API.Infra.Seguranca;
 
 namespace BancoDigital.ContaCorrente.API.Domain.Services
 {
-    public class ContaCorrenteService(IIdentificacaoService identificacaoService, IContaCorrenteRepository contaCorrenteRepository) : IContaCorrenteService
+    public class ContaCorrenteService(IIdentificacaoService identificacaoService,
+        IJwtService jwtService,
+        IConfiguration configuration,
+        IContaCorrenteRepository contaCorrenteRepository) : IContaCorrenteService
     {
+        private readonly IJwtService _jwtService = jwtService;
         private readonly IIdentificacaoService _identificacaoService = identificacaoService;
         private readonly IContaCorrenteRepository _contaCorrenteRepository = contaCorrenteRepository;
         public async Task<string> CriarContaCorrenteAsync(CriacaoContaCorrente criacaoContaCorrente)
@@ -28,12 +31,20 @@ namespace BancoDigital.ContaCorrente.API.Domain.Services
                 Ativo = true,
                 Salt = salt
             };
-            //await _contaCorrenteRepository.CriarContaCorrenteAsync(conta);
+            await _contaCorrenteRepository.CriarContaCorrenteAsync(conta);
             return conta.Numero.ToString();
         }
-        public Task<string> EfetuarLoginAsync(LoginContaCorrente loginContaCorrente)
+        public async Task<string> EfetuarLoginAsync(LoginContaCorrente loginContaCorrente)
         {
-            throw new NotImplementedException();
+            var conta = new ContaCorrenteModel();
+            var (hashArmazenado, salt) = SenhaHasher.HashPassword(loginContaCorrente.Senha!);
+            if (SenhaHasher.VerifyPassword(loginContaCorrente.Senha!, hashArmazenado, salt))
+            {
+                conta = await _contaCorrenteRepository.EfetuarLoginAsync(hashArmazenado);
+                var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtConfiguracoes>();
+               return _jwtService.GerarToken(conta.IdContaCorrente!, conta.Nome!, jwtSettings!);
+            }
+            return "USER_UNAUTHORIZED.";
         }
     }
 }

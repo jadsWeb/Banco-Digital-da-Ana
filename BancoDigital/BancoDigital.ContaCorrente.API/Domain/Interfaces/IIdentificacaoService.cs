@@ -1,7 +1,10 @@
+using BancoDigital.ContaCorrente.API.Aplicacao.Dtos;
+
 namespace BancoDigital.ContaCorrente.API.Domain.Interfaces
 {
     public interface IIdentificacaoService
     {
-        public string ObterIdentificacao(string cpf);
+        string ObterIdentificacao(string cpf);
+        object ValidarConta(LoginContaCorrente loginContaCorrente);
     }
 }
