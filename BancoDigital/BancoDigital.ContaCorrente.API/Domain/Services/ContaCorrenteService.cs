@@ -89,5 +89,15 @@ namespace BancoDigital.ContaCorrente.API.Domain.Services
                 return conta.Ativo;
             return false;
         }
+
+        public async Task<ContaCorrenteSaldo> ObterSaldoContaAsync(string identificacao)
+        {
+            var conta = await _contaCorrenteRepository.ObterContaPorIdAsync(identificacao);
+            if (conta == null)
+                throw new Exception("INVALID_ACCOUNT.");
+            if (conta.Ativo == false)
+                throw new Exception("INACTIVE_ACCOUNT.");
+            
+        }
     }
 }

@@ -64,10 +64,19 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
             var result = await _contaCorrenteService.VerificarContaAtivaAsync(identificacao!);
             if (!result)
                 return BadRequest(": INACTIVE_ACCOUNT.");
-            var resultMovimentacao = await _contaCorrenteService.MovimentarContaAsync(identificacao!, movimentacaoConta);    
-            if(resultMovimentacao != "SUCESSO.")
+            var resultMovimentacao = await _contaCorrenteService.MovimentarContaAsync(identificacao!, movimentacaoConta);
+            if (resultMovimentacao != "SUCESSO.")
                 return BadRequest(resultMovimentacao);
             return NoContent();
+        }
+
+        [Authorize]
+        [HttpGet("saldo")]
+        public async Task<IActionResult> ObterSaldoConta()
+        {
+            var identificacao = User.Claims.FirstOrDefault(c => c.Type == "IdConta")?.Value;
+            var contaCorrente = await _contaCorrenteService.ObterSaldoContaAsync(identificacao!);
+            return Ok(contaCorrente);
         }
     }
 }

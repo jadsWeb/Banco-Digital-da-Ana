@@ -1,4 +1,5 @@
 using BancoDigital.ContaCorrente.API.Aplicacao.Dtos;
+using BancoDigital.ContaCorrente.API.Aplicacao.Models;
 
 namespace BancoDigital.ContaCorrente.API.Domain.Interfaces
 {
@@ -8,6 +9,8 @@ namespace BancoDigital.ContaCorrente.API.Domain.Interfaces
         public Task<string> EfetuarLoginAsync(LoginContaCorrente loginContaCorrente);
         Task<string> InativarContaAsync(string contaId, string senhaConta);
         Task<string> MovimentarContaAsync(string identificacao, MovimentacaoConta movimentacaoConta);
+        Task<ContaCorrenteSaldo> ObterSaldoContaAsync(string identificacao);
+
         Task<bool> VerificarContaAtivaAsync(string identificacao);
     }
 }
