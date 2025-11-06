@@ -97,7 +97,14 @@ namespace BancoDigital.ContaCorrente.API.Domain.Services
                 throw new Exception("INVALID_ACCOUNT.");
             if (conta.Ativo == false)
                 throw new Exception("INACTIVE_ACCOUNT.");
-            
+            var saldo = await _contaCorrenteRepository.CalcularSaldoContaAsync(conta.IdContaCorrente!);    
+            return new ContaCorrenteSaldo
+            {
+                Nome = conta.Nome,
+                NumeroConta = conta.Numero.ToString(),
+                SaldoAtual = saldo,
+                DataHoraResposta = DateTime.Now,
+            };        
         }
     }
 }

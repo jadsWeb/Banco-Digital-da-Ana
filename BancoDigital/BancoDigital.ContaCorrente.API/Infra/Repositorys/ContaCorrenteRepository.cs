@@ -118,5 +118,27 @@ namespace BancoDigital.ContaCorrente.API.Infra.Repositorys
             }
         }
 
+        public async Task<decimal> CalcularSaldoContaAsync(string contaId)
+        {
+            var sql = @"
+                SELECT 
+                    SUM(CASE WHEN TipoMovimento = 'C' THEN Valor ELSE -Valor END) AS Saldo
+                FROM 
+                    Movimento
+                WHERE 
+                    IdContaCorrente = @contaId
+                GROUP BY 
+                    IdContaCorrente";
+            try
+            {
+                var saldo = await _connection.QueryFirstOrDefaultAsync<decimal>(sql, new { contaId });
+                return saldo;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao calcular saldo da conta: {ex.Message}");
+                return 0m;
+            }
+        }
     }
 }

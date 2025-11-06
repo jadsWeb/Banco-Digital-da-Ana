@@ -5,6 +5,6 @@ namespace BancoDigital.ContaCorrente.API.Aplicacao.Dtos
         public string? NumeroConta { get; set; }
         public string? Nome { get; set; }
         public decimal SaldoAtual { get; set; }
-        public string? MensagemResposta { get; set; }
+        public DateTime DataHoraResposta { get; set; }
     }
 }

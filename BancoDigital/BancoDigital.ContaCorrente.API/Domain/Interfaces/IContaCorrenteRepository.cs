@@ -10,5 +10,7 @@ namespace BancoDigital.ContaCorrente.API.Domain.Interfaces
         Task<ContaCorrenteModel> ObterContaPorIdAsync(string contaId);
         Task<int> InativarContaAsync(string contaId);
         Task AdicionarMovimentacaoAsync(Movimento movimento);
+        Task<decimal> CalcularSaldoContaAsync(string contaId);
+
     }
 }

@@ -45,7 +45,7 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
         {
             var contaId = User.Claims.FirstOrDefault(c => c.Type == "IdConta")?.Value;
             var result = "";
-            if ((result = await _contaCorrenteService.InativarContaAsync(contaId!, SenhaConta)) == "SUCESSO")
+            if ((result = await _contaCorrenteService.InativarContaAsync(contaId!, SenhaConta)) == "SUCESSO.")
                 return NoContent();
             return BadRequest(result);
         }
@@ -58,12 +58,12 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
             if (string.IsNullOrEmpty(identificacao))
                 identificacao = User.Claims.FirstOrDefault(c => c.Type == "IdConta")?.Value;
             if (movimentacaoConta.Valor <= 0)
-                return BadRequest(": INVALID_VALUE.");
+                return BadRequest("INVALID_VALUE.");
             if (movimentacaoConta.TipoMovimentacao != "C" && movimentacaoConta.TipoMovimentacao != "D")
-                return BadRequest(":INVALID_TYPE.");
+                return BadRequest("INVALID_TYPE.");
             var result = await _contaCorrenteService.VerificarContaAtivaAsync(identificacao!);
             if (!result)
-                return BadRequest(": INACTIVE_ACCOUNT.");
+                return BadRequest("INACTIVE_ACCOUNT.");
             var resultMovimentacao = await _contaCorrenteService.MovimentarContaAsync(identificacao!, movimentacaoConta);
             if (resultMovimentacao != "SUCESSO.")
                 return BadRequest(resultMovimentacao);
@@ -76,6 +76,8 @@ namespace BancoDigital.ContaCorrente.API.V1.Controllers
         {
             var identificacao = User.Claims.FirstOrDefault(c => c.Type == "IdConta")?.Value;
             var contaCorrente = await _contaCorrenteService.ObterSaldoContaAsync(identificacao!);
+            if (contaCorrente == null)
+                return BadRequest("");
             return Ok(contaCorrente);
         }
     }

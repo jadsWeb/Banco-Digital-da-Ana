@@ -1,6 +1,0 @@
-@BancoDigital.Transferencia.API_HostAddress = http://localhost:5129
-
-GET {{BancoDigital.Transferencia.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

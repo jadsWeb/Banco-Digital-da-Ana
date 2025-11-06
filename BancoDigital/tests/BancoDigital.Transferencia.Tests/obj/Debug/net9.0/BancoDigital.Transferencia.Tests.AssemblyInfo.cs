@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BancoDigital.Transferencia.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df78b7ab03f5b16e31ed24a0528f283e0739263c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd0520e11918c7912cdf3d88dfc726856e809a84")]
 [assembly: System.Reflection.AssemblyProductAttribute("BancoDigital.Transferencia.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BancoDigital.Transferencia.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

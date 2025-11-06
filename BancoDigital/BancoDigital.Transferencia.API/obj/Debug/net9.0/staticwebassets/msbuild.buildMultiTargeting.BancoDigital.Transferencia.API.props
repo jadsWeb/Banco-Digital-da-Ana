@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\BancoDigital.Transferencia.API.props" />
-</Project>
